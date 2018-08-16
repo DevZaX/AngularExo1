@@ -8,12 +8,13 @@
 	</div>
 
 	<div class="col-4">
-		<p>{{post.created_at | date:'MM/dd/y, h:mm a'}}</p>
+		<p><b>{{post.created_at | date:'MM/dd/y, h:mm a'}}</b></p>
 	</div>
 </div>
 
 	<p>{{post.content}}</p>
 	<button (click)="love(post)" style="margin-right:10px;" class="btn btn-success">Love It</button>
 	<button (click)="dontLove(post)" class="btn btn-danger">Don't Love  It</button>
+	<button class="btn btn-danger float-right" (click)="remove(post)">Remove post</button>
 </li>
  
