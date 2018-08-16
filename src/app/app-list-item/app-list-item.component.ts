@@ -17,11 +17,11 @@ export class AppListItemComponent implements OnInit {
   }
 
   love(post){
-    post.loveIts++
+    this.postService.loveIt(post)
   }
 
    dontLove(post){
-    post.loveIts--
+    this.postService.dontLoveIt(post)
   }
 
   remove(post){

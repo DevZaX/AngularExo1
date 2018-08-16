@@ -28,6 +28,14 @@ export class PostService {
       this.emitPosts()
   }
 
+  loveIt(post){
+    post.loveIts++;
+  }
+
+  dontLoveIt(post){
+    post.loveIts--; 
+  }
+
 
 
   constructor() { }
